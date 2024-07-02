@@ -26,21 +26,24 @@ To install `dbt-llm-tools` with the UI:
    ```bash
    cd dbt-llm-tools
    ```
-3. Install dependencies (assuming Poetry is installed):
+3. Install Poetry:
    ```bash
    make poetry
    ```
    - Add the poetry executable to your PATH and refresh the terminal.
-4. Install and optionally download an example project:
+4. Install the project dependencies:
    ```bash
    make install
-   make fetch_example_project (optional)
    ```
-5. Run the UI:
+5. Install an example project (optional):
+   ```bash
+   make fetch_example_project
+   ```
+6. Run the UI:
    ```bash
    make run_client
    ```
-6. Optional Step (if any dependency error shows up) :
+7. Optional Step (if any dependency error shows up) :
    ```bash
    pip install dbt-llm-tools
    ```
